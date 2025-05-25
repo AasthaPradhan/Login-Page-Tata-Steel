@@ -1,0 +1,111 @@
+/* Background for the container */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* cool blue gradient */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+/* Style the heading */
+h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+/* Marquee container */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* The moving text */
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+  font-weight: 600;
+  color: #ffd700; /* gold-ish color */
+  font-size: 1.1rem;
+}
+
+/* Animation for marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Input styles */
+input {
+  display: block;
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 8px #ffd700;
+}
+
+/* Buttons */
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #ffd700;
+  color: #203a43;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffc107;
+}
+
+/* Other text */
+.button-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.button-container p {
+  margin: 10px 0 5px 0;
+  font-weight: 500;
+  color: #eee;
+}
+
+.button-container button {
+  width: auto;
+  padding: 8px 18px;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid #ffd700;
+  color: #ffd700;
+}
+
+.button-container button:hover {
+  background-color: #ffd700;
+  color: #203a43;
+}
